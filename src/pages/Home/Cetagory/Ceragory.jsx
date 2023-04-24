@@ -7,7 +7,7 @@ const Ceragory = () => {
     const categoryNews = useLoaderData()
     return (
         <div>
-            <h2>this is cetagory page </h2>
+            { id && <h2>this is cetagory page </h2>}
             {
                 categoryNews.map(news => <NewsCard
                 key={news._id}
